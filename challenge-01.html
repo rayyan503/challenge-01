@@ -3,12 +3,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Link to Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Optionally, you can apply the font to specific elements */
+      /* For example, applying to the body */
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
     <title>Challenge-01</title>
   </head>
   <body>
     <!-- Navbar -->
     <nav
-      class="container p-5 bg-neutral-300 shadow md:flex md:items-center md:justify-between mx-auto"
+      class="p-5 bg-neutral-300 shadow md:flex md:items-center md:justify-between mx-auto"
     >
       <div class="flex justify-between items-center">
         <span class="mx-10 bg-blue-800 py-6 px-20 rounded"></span>
@@ -37,19 +49,19 @@
     </nav>
 
     <!--Banner -->
-    <div class="container mx-auto flex max-sm:flex-col bg-neutral-300">
-      <div class="flex flex-1 flex-col justify-center p-5 mx-4">
-        <h1 class="mb-5 text-3xl font-bold px-6">
+    <div class="flex justify-between max-sm:flex-col bg-neutral-300">
+      <div class="mx-auto flex flex-1 flex-col justify-center px-16">
+        <h1 class="mb-5 text-3xl font-bold">
           Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)
         </h1>
-        <p class="px-6 text-sm">
+        <p class="text-sm">
           Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas
           terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu
           untuk sewa mobil selama 24 jam.
         </p>
         <button
           type="button"
-          class="bg-green-500 text-cyan-50 p-5 py-2 mx-auto ml-10 mt-5 hover:bg-cyan-500 rounded-md"
+          class="bg-green-500 text-cyan-50 p-5 py-2 w-fit mt-5 hover:bg-cyan-500 rounded-md"
         >
           Mulai Sewa Mobil
         </button>
@@ -62,7 +74,7 @@
     <!--Content 1-->
     <div class="container mx-auto flex max-sm:flex-col px-6 mt-20">
       <div class="flex flex-1 mt-5 justify-center">
-        <img src="img/img_service.png" width="300px" height="300px" />
+        <img src="img/img_service.png" class="max-w-full" />
       </div>
       <div class="flex flex-1 flex-col justify-center p-5 mx-4">
         <h1 class="mb-5 text-3xl font-bold">
@@ -75,23 +87,23 @@
           dll.
         </p>
         <ul>
-          <li class="flex text-justify mt-5">
+          <li class="flex text-justify mt-5 gap-2">
             <img src="img/Group 53.png" width="auto" />
             <p class="text-sm">Sewa Mobil Dengan Supir di Bali 12 Jam</p>
           </li>
-          <li class="flex text-justify mt-5">
+          <li class="flex text-justify mt-5 gap-2">
             <img src="img/Group 53.png" width="auto" />
             <p class="text-sm">Sewa Mobil Lepas Kunci di Bali 24 Jam</p>
           </li>
-          <li class="flex text-justify mt-5">
+          <li class="flex text-justify mt-5 gap-2">
             <img src="img/Group 53.png" width="auto" />
             <p class="text-sm">Sewa Mobil Jangka Panjang Bulanan</p>
           </li>
-          <li class="flex text-justify mt-5">
+          <li class="flex text-justify mt-5 gap-2">
             <img src="img/Group 53.png" width="auto" />
             <p class="text-sm">Gratis Antar - Jemput Mobil di Bandara</p>
           </li>
-          <li class="flex text-justify mt-5">
+          <li class="flex text-justify mt-5 gap-2">
             <img src="img/Group 53.png" width="auto" />
             <p class="text-sm">Layanan Airport Transfer / Drop In Out</p>
           </li>
@@ -108,7 +120,7 @@
     </div>
 
     <div class="container mx-auto flex justify-center">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mx-20">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-16">
         <div class="max-w-sm rounded overflow-hidden shadow mt-10">
           <img class="max-w-sm p-5" src="img/icon_complete.png" />
           <div class="px-6 py-4">
@@ -166,8 +178,8 @@
           class="max-w-lg col-start-2 rounded overflow-hidden shadow bg-blue-200"
         >
           <img class="max-w-sm mt-10 px-5 mb-2 ml-28" src="img/Rate.png" />
-          <div class="flex flex-1 justify-center">
-            <img class="max-w-sm ml-10" src="img/img_photo.png" />
+          <div class="flex flex-1 justify-center items-center">
+            <img class="w-32 h-full ml-10" src="img/img_photo.png" />
             <p class="ml-5 mx-5 mb-2 text-justify">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Voluptatibus quia, nulla! Maiores et perferendis eaque,
